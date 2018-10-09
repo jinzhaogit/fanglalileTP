@@ -1,0 +1,33 @@
+<table id="tagDg">
+</table> 
+<div id="tagtb">
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="Tags.add();" />增加</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" onclick="Tags.del();"/>删除</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" onclick="Tags.edit();"/>修改</a>
+</div>
+<div id="tagWin">
+	<form id="tagFm" method="post">   
+	    <div>   
+	        <p><label for="title">标题:</label></p>  
+	        <input class="easyui-validatebox" type="text" name="title" />   
+	    </div>   
+	    <div>   
+	        <p><label for="tag">主要介绍:</label></p>  
+	        <script id="tag" name="tag" type="text/plain"></script> 
+	    </div> 
+	    <input type="hidden" name="id" />
+	</form>  
+</div>
+<script type="text/javascript" src="ADMINJS/tags.js" ></script>
+ <!--配置文件--> 
+<script type="text/javascript" src="ADMIN/ueditor1.4.3.3/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="ADMIN/ueditor1.4.3.3/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+     var admin='ADMIN';
+     var ue = UE.getEditor('tag', {
+	    UEDITOR_HOME_URL:admin+'/ueditor1.4.3.3/',
+	    serverUrl:admin+'/ueditor1.4.3.3/php/controller.php',
+	});
+</script>

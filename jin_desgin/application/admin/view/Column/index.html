@@ -1,0 +1,48 @@
+<table id="dgCol">
+<label>Alt：<input class="easyui-validatebox" id="alt" type="text" name="alt" /></label>
+&nbsp;<input class="easyui-linkbutton" value="查询" onclick="column.query();" style="font-size: 16px;width: 50px;"/>
+<div id="tbCol">
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="column.add();">增加</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" onclick="column.del();">删除</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" onclick="column.edit();">修改</a>
+</div>
+</table> 
+<div id="winCol">
+	<form id="ffCol" method="post">   
+	    <div>   
+	       <p><label for="logo">Logo:</label></p>   
+	        <input id="fb" type="text" name="logo" style="width:200px">   
+	    </div> 
+	    <div>   
+	        <p><label for="alt">Alt:</label></p>   
+	        <input class="easyui-validatebox" type="text" name="alt"/>   
+	    </div> 
+	    <div>   
+	        <p><label for="url">链接:</label></p>   
+	        <input class="easyui-validatebox" type="text" name="url"/>   
+	    </div>      
+	</form>  
+</div> 
+<div id="winColDb">
+	<form id="ffColDb" method="post">   
+		 <div>   
+	       <p><label for="logo">Logo:</label></p>   
+	        <img src="" style="width: 100px;height: 80px;"/> 
+	    </div>  
+	    <div>   
+	       <p><label for="logo">新的Logo:</label></p>   
+	        <input class="easyui-filebox" style="width:200px" name="logo">  
+	    </div>  
+	    <div>   
+	        <p><label for="alt">Alt:</label></p>   
+	        <input class="easyui-validatebox" type="text" name="alt"/>   
+	    </div> 
+	    <div>   
+	        <p><label for="url">链接:</label></p>   
+	        <input class="easyui-validatebox" type="text" name="url"/>   
+	    </div>
+	    <input type="hidden" name="id" id="ffColDbId"/>
+	</form>  
+</div> 
+<script type="text/javascript" src="ADMINJS/column.js" ></script>
+<script type="text/javascript" src="ADMINJS/jquery.form.js" ></script>

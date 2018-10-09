@@ -1,0 +1,25 @@
+<table id="datagridUser">
+	
+</table> 
+<div id="tbUser">
+	<label>姓名：<input class="easyui-validatebox" id="qnameUser" type="text" name="name" /></label>
+	<label> 性别：<input class="easyui-validatebox" id="qsexUser" type="text" name="sex" /></label>
+	&nbsp;<input class="easyui-linkbutton" value="查询" onclick="User.query();" style="font-size: 16px;width: 50px;"/>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="User.add();" />增加</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" onclick="User.del();"/>删除</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" onclick="User.edit();"/>修改</a>
+</div>
+<div id="winUser">
+	<form id="fmdeptUser" method="post">     
+        <p><label for="name">姓名:</label> 
+        </p> <input class="easyui-validatebox" type="text" name="name" data-options="required:true" />   
+        <p><label for="pwd">密码:</label>
+        </p><input class="easyui-validatebox" type="password" name="pwd" data-options="required:true" />    
+        <p><label for="sex">性别:</label>   
+        </p><input class="easyui-validatebox" type="text" name="sex"/>     
+        <p><label for="address">地址:</label>   
+        </p><input class="easyui-validatebox" type="text" name="address" />   
+        <input type="hidden" name="id" />
+	</form>  
+</div> 
+<script type="text/javascript" src="ADMINJS/user.js" ></script>

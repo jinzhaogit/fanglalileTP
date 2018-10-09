@@ -1,0 +1,41 @@
+<table id="dgLun">
+
+<div id="tbLun">
+	<label>名称：<input class="easyui-validatebox" id="nameLun" type="text" name="name" /></label>
+&nbsp;<input class="easyui-linkbutton" value="查询" onclick="Lunbotu.query();" style="font-size: 16px;width: 50px;"/>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="Lunbotu.add();">增加</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" onclick="Lunbotu.del();">删除</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" onclick="Lunbotu.edit();">修改</a>
+</div>
+</table> 
+<div id="winLun">
+	<form id="ffLun" method="post">  
+		<div>   
+	        <p><label for="name">名称:</label></p>   
+	        <input class="easyui-validatebox" type="text" name="name"/>   
+	    </div>
+	    <div>   
+	       <p><label for="tu">轮播图:</label></p>   
+	        <input id="fb" type="text" name="tu" style="width:200px">   
+	    </div>  
+	</form>  
+</div> 
+<div id="winLunDb">
+	<form id="ffLunDb" method="post">   
+		 <div>   
+	       <p><label for="tu">tu:</label></p>   
+	        <img src="" style="width: 100px;height: 80px;"/> 
+	    </div>  
+	    <div>   
+	       <p><label for="tu">新的tu:</label></p>   
+	        <input class="easyui-filebox" style="width:200px" name="tu">  
+	    </div>  
+	    <div>   
+	        <p><label for="name">名称:</label></p>   
+	        <input class="easyui-validatebox" type="text" name="name"/>   
+	    </div>
+	    <input type="hidden" name="id" id="ffLunDbId"/>
+	</form>  
+</div> 
+<script type="text/javascript" src="ADMINJS/lunbotu.js" ></script>
+<script type="text/javascript" src="ADMINJS/jquery.form.js" ></script>

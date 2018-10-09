@@ -1,0 +1,52 @@
+<table id="atDg">
+	
+</table> 
+<div id="tb">
+	<label>标题：<input class="easyui-validatebox" id="atitle" type="text" name="title" /></label>
+	<label> 市区：<input class="easyui-validatebox" id="acity" type="text" name="city" /></label>
+	&nbsp;<input class="easyui-linkbutton" value="查询" onclick="article.query();" style="font-size: 16px;width: 50px;"/>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="article.add();" />增加</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" onclick="article.del();"/>删除</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" onclick="article.edit();"/>修改</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-filter',plain:true" onclick="article.editImg();"/>修改图片</a>
+</div>
+<div id="artWin">
+	<form id="artFm" method="post">   
+	    <div>   
+	        <p><label for="title">标题:</label></p>  
+	        <input class="easyui-validatebox" type="text" name="title" />   
+	    </div>   
+	    <div>   
+	        <p><label for="content">简介:</label></p>  
+	        <input class="easyui-validatebox" type="text" name="content" style="width: 150px;height: 150px;"/>   
+	    </div> 
+	    <div>   
+	        <p><label for="img">图片:</label></p>   
+	        <input id="fb" type="text" name="img">  
+	    </div> 
+	    <div>   
+	        <p><label for="province">省:</label></p>   
+	        <input id="cc" value="河南省" name="province">   
+	    </div> 
+	    <div>   
+	        <p><label for="city">市:</label></p>   
+	        <input id="cd" value="郑州市" name="city"> 
+	    </div> 
+	    <div>   
+	        <p><label for="area">区:</label></p>   
+	        <input id="ce" value="二七区" name="area">   
+	    </div> 
+	    <div>   
+	        <p><label for="price">价格:</label></p>   
+	        <input class="easyui-validatebox" type="text" name="price" /> <input type="hidden" name="id"/>  
+	    </div> 	
+	</form>  
+</div>
+<form id="fformImg"><p>    
+    <img src="" /></p>    
+    <label for="img">新的图片:</label><p>   
+    <input class="easyui-filebox" name="img"/></p>    
+	<input id="fmImg" type="hidden" name="id" />
+</form> 
+<script type="text/javascript" src="ADMINJS/article.js" ></script>
+<script type="text/javascript" src="ADMINJS/jquery.form.js" ></script>

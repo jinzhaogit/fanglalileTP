@@ -1,0 +1,23 @@
+<table id="hotDg">
+</table> 
+<div id="hotTb">
+	<label>Alt：<input class="easyui-validatebox" id="namehot" type="text" name="name" /></label>
+&nbsp;<input class="easyui-linkbutton" value="查询" onclick="Hot.query();" style="font-size: 16px;width: 50px;"/>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="Hot.add();" />增加</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true" onclick="Hot.del();"/>删除</a>
+	<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" onclick="Hot.edit();"/>修改</a>
+</div>
+<div id="hotWin">
+	<form id="hotFm" method="post">   
+	    <div>   
+	        <p><label for="name">名称:</label></p>  
+	        <input class="easyui-validatebox" type="text" name="name" />   
+	    </div>   
+	    <div>   
+	        <p><label for="hot">热度:</label></p>  
+	        <input class="easyui-validatebox" type="text" name="hot" />
+	    </div> 
+	    <input type="hidden" name="id" />
+	</form>  
+</div>
+<script type="text/javascript" src="ADMINJS/hot.js" ></script>
